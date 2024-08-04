@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Article de blog</title>
+    <style>
+        :root {
+            --background-color: #ffffff;
+            --text-color: #000000;
+            --button-color: #757575;
+        }
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --background-color: #121212;
+                --text-color: #ffffff;
+                --button-color: #9e9e9e;
+            }
+        }
+        body {
+            font-family: 'Roboto', Arial, sans-serif;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 0;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        .container {
+            max-width: 65%;
+            margin: 0 auto;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        @media (max-width: 768px) {
+            .container {
+                max-width: 100%;
+                padding: 10px;
+            }
+        }
+        .content {
+            line-height: 1.6;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+        }
+        .back-button {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background-color: var(--button-color);
+            color: var(--background-color);
+            border: none;
+            border-radius: 4px;
+            padding: 8px 16px;
+            font-size: 16px;
+            cursor: pointer;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+            transition: background-color 0.3s;
+            z-index: 1000;
+        }
+        .back-button:hover {
+            background-color: #616161;
+        }
+        a {
+            color: inherit;
+            text-decoration: none;
+            border-bottom: 1px dotted var(--text-color);
+        }
+        .copy-button {
+            display: inline-block;
+            cursor: pointer;
+            margin-left: 5px;
+            font-size: 0.8em;
+            vertical-align: super;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <h1 id="article-title"></h1>
+            <div id="article-content"></div>
+        </div>
+    </div>
+    <button class="back-button" onclick="window.close()">Fermer</button>
+
+    <script>
+        const article = { title: '1984 - La forme ultime du totalitarisme', content: 'Je viens de terminer la lecture du roman dystopique "1984" et j\'ai réalisé qu\'il vaut vraiment la peine de lire la version originale. Les autres interprétations ont tendance à compresser le contenu du livre original, voire à déformer le contenu original. Par exemple, le slogan le plus célèbre du Parti dans ce roman n\'est pas absurde en soi, mais décrit plutôt la rationalité du monde absurde construit par le Parti et les deux autres pays dans le contexte de l\'époque - bien sûr, c\'est aussi une rationalité terrifiante. Ainsi, ne pas lire la version originale peut également conduire à une mauvaise interprétation du livre.\n\nJe ne vais donc pas faire une interprétation de l\'intrigue de ce livre, mais je vais plutôt parler des reflets de la société du livre dans la réalité, ainsi que des questions liées à la société totalitaire. Ce livre nous présente un scénario terrifiant, une forme ultime du totalitarisme, une civilisation totalitaire. Cet article peut contenir des spoilers, il est donc recommandé de lire l\'original avant de le consulter. Sans plus attendre, entrons dans la discussion d\'aujourd\'hui.\n\nPremière partie - Le monopole du Parti\n\nTout au long du livre, l\'Angsoc, c\'est-à-dire le Parti socialiste anglais, en tant que dirigeant de tout le gouvernement totalitaire, traverse tout le texte. Dans des circonstances normales, en particulier dans les pays multipartites, même si un parti contrôle les médias, en raison du fait que son parti concurrent contrôle un autre média, les informations que le peuple obtient, même si elles ne sont pas toute la vérité, peuvent s\'en approcher autant que possible grâce à leur exhaustivité.\n\nMais dans une société totalitaire comme celle-ci, où un seul parti occupe une position absolument dominante, sans autres partis capables de rivaliser avec lui, voire où l\'existence d\'autres partis n\'est pas autorisée, le contrôle de ce parti unique sur l\'information dans la société sera presque absolu. Tous les médias sont contrôlés par le Parti, toutes les informations sont contrôlées par le Parti. Sous ce totalitarisme, le Parti contrôle les médias, le Parti contrôle l\'information, le Parti contrôle les faits.\n\nParce qu\'en l\'absence d\'autres sources d\'information, les gens ne peuvent et ne veulent croire que le Parti, et tout ce que les gens croient constitue ce qu\'ils considèrent comme la vérité. Ainsi, le Parti devient ce que les gens considèrent comme la vérité. Mais c\'est précisément ce que les gens considèrent comme la vérité, plutôt que la vérité réelle, qui influence le jugement des gens, et donc l\'orientation future du monde. C\'est aussi le slogan de l\'Angsoc : "Qui contrôle le passé contrôle l\'avenir ; qui contrôle le présent contrôle le passé."\n\nParmi tous les aspects de la vérité, l\'histoire n\'en est qu\'un. Et le contrôle du Parti sur la vérité va bien au-delà. Comme démontré ci-dessus, le Parti ne contrôle pas seulement la publication de nouvelles informations, mais peut aussi contrôler l\'histoire. Dans le texte, le Ministère de la Vérité où travaille Winston est chargé de falsifier l\'histoire pour le Parti. Voici comment cela se passe : lorsqu\'une information que le Parti considère comme erronée apparaît (par exemple, des erreurs dans les prédictions passées du Parti pour l\'avenir, des données précédentes du Parti qui étaient également fausses pour correspondre à la propagande actuelle des réalisations, des guerres passées du Parti avec un autre pays, etc.), tous les anciens documents sont détruits et remplacés par de nouveaux documents contenant les informations correctes.\n\nDans une telle société, les gens ne peuvent pas connaître leur véritable histoire à travers des documents historiques, et ils ne savent pas non plus que ce qu\'ils connaissent est incorrect, car un tel argument n\'est pas non plus autorisé à exister. Ils n\'ont pas d\'autres moyens d\'accéder à l\'information, et à moins que le Parti ne s\'autodiscipline, l\'information qu\'ils obtiennent sera certainement conforme aux intérêts du Parti. Une telle société n\'a pas de liberté de la presse, pas de liberté d\'accès à l\'information. Dans une telle société, les gens n\'ont pas la vérité dans leur cœur, pas même l\'apparence de la vérité.\n\nEt c\'est précisément parce que les gens n\'ont aucune connaissance de la véritable vérité que leur vision du monde basée sur ce qu\'ils croient être la vérité est déformée, et le Parti obtient son pouvoir absolu en créant et en exacerbant délibérément ce point. Dans le livre, pour les personnes qui ne sont pas encore complètement formées à l\'idéal du nouvel homme sous le totalitarisme, elles ont encore besoin de trouver un exutoire émotionnel dans leur vie monotone, mais tout autre exutoire émotionnel pourrait potentiellement nuire au pouvoir absolu du Parti. Ainsi sont apparus les "réunions de haine" et les "semaines de haine", utilisées pour permettre aux gens de hurler leur colère contre l\'ennemi alors en état d\'hostilité.\n\nLe seul exutoire émotionnel dans la vie est devenu la haine envers les pays ennemis. Quel est l\'avantage de cela pour le Parti ? Ce comportement apparemment patriotique et bénéfique pour le pays est en réalité un moyen de détourner les conflits du peuple. Ce n\'est qu\'ainsi que le peuple n\'attribuera pas la réduction des ressources, la détérioration de la vie monotone, etc., à leurs véritables créateurs, les dirigeants (gouvernants) du Parti. Au contraire, ils sont naturellement guidés vers la haine de l\'ennemi. En fait, cette méthode est très efficace. "Le plus terrible dans les deux minutes de haine n\'était pas qu\'on était obligé d\'y jouer un rôle, mais, qu\'au contraire, il était impossible de ne pas s\'y joindre", décrit ainsi Orwell.\n\nQuant à ces masses, elles semblent pleines de passion pour le pays, mais en réalité, ce n\'est qu\'un sentiment patriotique primaire, un sentiment patriotique qui n\'a pas subi de formation sérieuse, qui ne se souvient d\'aucun problème de son propre pays, mais qui est soigneusement planifié et soigneusement guidé. Et ce sentiment ne vient pas de leur compréhension de la situation mondiale, ni de leur compréhension de la politique, encore moins de leur raisonnement logique. Tout cela ne vient que de leur ignorance totale des faits.\n\nEt c\'est là que réside "L\'ignorance, c\'est la force", le troisième slogan du Parti. Cela signifie que sous la propagande, l\'éducation et la culture du Parti, lorsque le Parti est devenu la vérité du monde que les masses peuvent connaître, la connaissance de la véritable vérité est impuissante. D\'un autre point de vue, cela signifie que croire totalement aux paroles du Parti, aux documents édités (falsifiés) par le Parti, a généré une force énorme. La force de l\'ignorance produite par l\'ignorance de la vérité est une force brute irrationnelle, mais elle suffit à éclipser la poursuite sporadique de la pensée rationnelle et les résultats de la pensée rationnelle.\n\nLe résultat est que toute la société est imprégnée d\'une atmosphère optimiste et positive. Seulement, ce n\'est pas l\'optimisme envers les valeurs universellement reconnues et poursuivies par l\'humanité, parce qu\'ils ont réalisé ces valeurs et sont donc optimistes et positifs. Au contraire, c\'est précisément parce qu\'ils ne l\'ont pas fait, mais que dans la propagande du Parti, ils ont réalisé ce que le Parti pense que les gens peuvent poursuivre, comme l\'abondance matérielle, la puissance nationale. Bien qu\'elles n\'existent pas dans la réalité, pour ces masses ignorantes et certains membres du Parti, c\'est la motivation qui les fait persévérer dans leur vie et aimer le Parti.\n\nL\'ignorance des masses est la force du Parti totalitaire monopolistique.\n\nDeuxième partie - Le Parti et les autres pays\n\nDans le récit du Parti, le Parti a une mission, qui est de libérer toute l\'humanité. Bien sûr, ils ne veulent pas vraiment donner à l\'humanité la liberté, la démocratie, etc., mais utilisent ce prétexte pour conquérir l\'humanité. Dans l\'hymne national du Parti (une œuvre dérivée), il y a une phrase : "to keep our great revolution alive", qui parle de cela. Et le moyen de libération se fait par la guerre, la lutte pour les régions à forte population, et nominalement la guerre contre d\'autres pays.\n\nLe livre décrit peu les premiers stades de la révolution, même la personne la plus opposée au régime actuel dans le livre considère que la révolution a été trahie. Mais en fait, d\'un point de vue plus profond, à moins que les dirigeants n\'aient une conscience supérieure, ce type de révolution socialiste est impossible de réussir à long terme. Parce que la révolution socialiste est basée sur une théorie qui n\'est pas correcte, elle considère que seuls les travailleurs créent de la valeur, et que les capitalistes ne créent pas de valeur. Cela a déjà été réfuté par les principaux courants de l\'économie moderne. La valeur créée par les capitalistes est la prise de risque.\n\nEt une révolution basée sur une telle théorie ne peut certainement pas durer longtemps, car elle conduira inévitablement à l\'effondrement économique. Ce qui la remplacera, ce sont d\'autres idées brandissant le drapeau du socialisme pour rechercher leurs propres intérêts. Et ces personnes sont précisément issues des rangs de la révolution précédente. Parce que la révolution socialiste a un leadership, et le pouvoir de ce leadership est énorme, mais il n\'y a pas de contraintes institutionnelles à long terme sur le pouvoir. Un pouvoir illimité apporte une corruption illimitée. Donc, pour la révolution socialiste, il n\'y a pas de possibilité de succès, mais seulement la production d\'un régime totalitaire incontrôlable.\n\nPourquoi le système multipartite est-il meilleur que le système à parti unique ? Vous pourriez dire qu\'il peut y avoir des opinions différentes au sein du parti. Mais en réalité, un parti est comme une micro-structure politique, et l\'objectif de cette structure deviendra inévitablement unifié et homogénéisé avec le temps. Et à ce moment-là, les détenteurs du pouvoir au sein du parti élimineront les dissidents pour étendre leur pouvoir. Tant qu\'un parti a un leadership, il s\'uniformisera. Et le système multipartite est un bon outil de contrainte, premièrement, il motive le parti au pouvoir à maintenir le soutien du peuple, deuxièmement, il permet au peuple de choisir différentes idéologies, et troisièmement, il préserve la diversité de la société et de l\'information, évitant la dictature sous un système à parti unique.\n\nAprès la fin de la phase initiale de libération, lorsque le modèle d\'équilibre des trois pays s\'est formé, la guerre est devenue unique. Parce qu\'en réalité, ce type de guerre n\'est pas ce que nous connaissons, avec pour but d\'occuper des territoires. Dans le monde de 1984, il y a trois pays au total. Et la méthode de guerre consiste à se disputer les terres des zones contestées, c\'est-à-dire les terres entre les frontières nationales. Comme la puissance de chaque pays est très équilibrée, la guerre se fait par l\'alliance d\'un pays avec un autre pays pour attaquer un tiers.\n\nMais parce qu\'aucun pays ne veut perturber sa propre gouvernance et veut maintenir cet état d\'équilibre entre les trois pays, leurs alliances sont variables et changeantes. Mais elles ne sont pas sincères. Car une fois que l\'équilibre est rompu, les deux pays restants ne peuvent que devenir des pays ennemis. Et il y aura toujours une partie qui l\'emportera à la fin en raison de facteurs accidentels, entraînant la perte du pouvoir original détenu par le groupe dirigeant et le parti de l\'autre pays, voire la possibilité de survie.\n\nDonc à ce moment-là, la guerre n\'est qu\'un prétexte, en réalité c\'est un moyen de détourner les conflits et un canal pour la surproduction. Et l\'objet de la guerre lui-même n\'est plus important. Et en fait, bien que les trois pays prétendent avoir des valeurs différentes, leur essence réelle est la même, tous basés sur la même logique de gouvernance, un régime où un seul parti domine. À ce moment-là, la guerre est la norme, la guerre apporte une paix directe, la tranquillité pour le parti au pouvoir. Ce type de guerre ne fera que faire perdre aux civils leurs familles, perdre une certaine allocation de matériel. Mais pour les dirigeants, la guerre extérieure leur apporte la paix intérieure. C\'est ce qu\'on appelle la guerre, c\'est la paix :\n\nLa "guerre" entre les pays apporte la raison de la pauvreté et d\'autres problèmes au pays, permettant au Parti d\'obtenir la paix.\n\nTroisième partie - 1984 et la Chine\n\nDans le monde réel, ce qui correspond à la description de 1984 est probablement la Chine (République populaire de Chine)\n\nDans le roman, l\'Océania réalise un contrôle absolu par des moyens technologiques, nous projetant la forme ultime du totalitarisme. Dans la vie réelle, le contrôle de l\'information par la Chine n\'a pas atteint un contrôle total même dans les cas les plus extrêmes. Mais dans la vie réelle, un tel pouvoir autoritaire existe aussi, seulement son intensité n\'est pas aussi élevée. Par exemple, le Grand Pare-feu de Chine (le pays où je vis).\n\nEn République populaire de Chine, le Grand Pare-feu est un projet de réseau national, et c\'est aussi le principal moyen de contrôle de la parole du PCC, car Internet est le moyen le plus facile de diffuser des informations défavorables au Parti. Le Grand Pare-feu Internet est comme la Grande Muraille d\'antan, tous deux résistent au monde extérieur. Et leur différence est que l\'un résiste à l\'invasion des tribus étrangères, l\'autre résiste aux vraies informations du monde libre extérieur. C\'est unique au monde, les internautes chinois (ceux qui ne savent pas contourner le Grand Pare-feu Internet par des moyens comme le VPN) n\'utilis ent pas Google, YouTube, Facebook, Twitter et d\'autres sites Web courants dans le monde, mais des versions locales comme Baidu, Youku, Weibo, etc. Ces versions locales sont facilement contrôlables par le gouvernement, et le contenu peut être supprimé à tout moment.\n\nBien que le Grand Pare-feu ne soit pas aussi efficace que le télécran dans 1984, il a encore un impact énorme. Par exemple, lorsque des événements négatifs se produisent, le gouvernement peut facilement supprimer les informations pertinentes sur Internet. Quand le gouvernement veut façonner l\'opinion publique, il peut facilement le faire à travers les médias qu\'il contrôle. Bien que ce ne soit pas un contrôle total comme dans 1984, c\'est déjà suffisant pour que le gouvernement maintienne son pouvoir.\n\nDe plus, le système de crédit social en Chine ressemble beaucoup au contrôle décrit dans 1984. Ce système attribue des scores aux citoyens en fonction de leur comportement, y compris leurs activités en ligne. Un faible score peut entraîner diverses restrictions, comme l\'interdiction de voyager en avion ou en train rapide. Bien que ce système ne soit pas aussi extrême que dans 1984, il représente une forme de contrôle social qui s\'en rapproche dangereusement.\n\nLa surveillance en Chine est également très développée. Les caméras de surveillance sont omniprésentes dans les espaces publics, et la reconnaissance faciale est largement utilisée. Bien que ce ne soit pas aussi intrusif que les télécrans dans 1984 qui surveillent même les espaces privés, cela représente néanmoins un niveau de surveillance élevé.\n\nEn termes de contrôle de l\'information historique, la Chine n\'est pas aussi extrême que dans 1984, mais il existe des similitudes inquiétantes. Certains événements historiques, comme les manifestations de la place Tiananmen en 1989, sont largement censurés et effacés des manuels scolaires et d\'Internet. Bien que ce ne soit pas une réécriture constante de l\'histoire comme dans 1984, c\'est une forme de contrôle de l\'information historique.\n\nLe culte de la personnalité autour des dirigeants en Chine, bien que moins intense que celui de Big Brother dans 1984, existe toujours. Les portraits des dirigeants sont affichés dans les lieux publics, et leurs pensées sont étudiées dans les écoles. Cela rappelle la façon dont Big Brother est omniprésent dans 1984.\n\nEnfin, la propagande en Chine, bien que moins extrême que dans 1984, joue un rôle important. Les médias d\'État diffusent constamment des messages positifs sur le Parti et le pays, minimisant ou ignorant les problèmes. Cela rappelle la façon dont le Parti dans 1984 maintient une atmosphère d\'optimisme malgré les conditions de vie difficiles.\n\nEn conclusion, bien que la Chine d\'aujourd\'hui ne soit pas aussi extrême que le monde décrit dans 1984, il existe des parallèles inquiétants. Le contrôle de l\'information, la surveillance, la manipulation de l\'histoire, le culte de la personnalité et la propagande sont tous présents, bien qu\'à un degré moindre. Ces similitudes nous rappellent l\'importance de rester vigilants face à l\'autoritarisme et de valoriser la liberté d\'information et d\'expression.\n\nIl est important de noter que malgré ces contrôles, de nombreux citoyens chinois trouvent des moyens de contourner les restrictions et d\'accéder à des informations diverses. De plus, la Chine a connu un développement économique remarquable qui a sorti des millions de personnes de la pauvreté. La réalité est donc plus nuancée que la dystopie décrite dans 1984.\n\nCependant, les parallèles entre 1984 et certains aspects de la société chinoise moderne nous rappellent l\'importance de la vigilance face aux dérives autoritaires. Ils soulignent également la pertinence continue du roman d\'Orwell comme avertissement contre les dangers du totalitarisme, même dans notre monde moderne.\n\nEn fin de compte, 1984 reste un rappel puissant de l\'importance de la liberté d\'expression, de la vie privée et de l\'accès à l\'information. Il nous encourage à réfléchir de manière critique sur nos propres sociétés et à rester vigilants face à toute forme d\'autoritarisme, qu\'elle soit flagrante ou subtile.', pinned: false }
+
+function processContent(content) {
+            return content
+                .replace(/\[link:(.*?)\]\((.*?)\)/g, '<a href="$2">$1</a>')
+                .replace(/\[copy-broad:(.*?)\]/g, '$1<span class="copy-button" onclick="copyText(\'$1\')">❐</span>');
+        }
+
+        function copyText(text) {
+            navigator.clipboard.writeText(text).then(() => {
+                alert('Texte copié dans le presse-papiers');
+            }).catch(err => {
+                console.error('Échec de la copie du texte : ', err);
+            });
+        }
+
+        function loadArticle() {
+            document.title = article.title;
+            document.getElementById('article-title').textContent = article.title;
+            document.getElementById('article-content').innerHTML = processContent(article.content);
+        }
+
+        window.onload = loadArticle;
+    </script>
+</body>
+</html>
